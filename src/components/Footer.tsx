@@ -154,20 +154,12 @@ export default function Footer({ setActivePage }: FooterProps) {
                 </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNav('assets')} 
-                  className="hover:text-brand-orange text-left hover:translate-x-1 transition-all duration-200 text-brand-orange font-medium"
-                >
-                  Asset & Media Panel
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleNav('support')} 
-                  className="hover:text-brand-orange text-left hover:translate-x-1 transition-all duration-200"
-                >
-                  Contact Support
-                </button>
+               <button 
+                 onClick={() => handleNav('support')} 
+                 className="hover:text-brand-orange text-left hover:translate-x-1 transition-all duration-200"
+               >
+                 Contact Support
+               </button>
               </li>
             </ul>
           </div>
