@@ -1,0 +1,168 @@
+<svg
+  id="container-illustration-svg"
+  viewBox="0 0 600 600"
+  width="100%"
+  height="100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- 1. SKY BACKGROUND -->
+  <rect id="sky-bg" width="600" height="600" fill="#2d7bb7" />
+
+  <!-- 2. CRANE / CABLES -->
+  <g id="crane-system">
+    <line x1="150" y1="0" x2="150" y2="80" stroke="#111827" stroke-width="3" />
+    <line x1="160" y1="0" x2="160" y2="80" stroke="#111827" stroke-width="3" />
+
+    <path d="M 130,80 L 180,80 L 170,120 L 140,120 Z" fill="#eab308" stroke="#111827" stroke-width="3" />
+    <path d="M 148,80 L 138,120" stroke="#111827" stroke-width="5" />
+    <path d="M 160,80 L 150,120" stroke="#111827" stroke-width="5" />
+    <path d="M 172,80 L 162,120" stroke="#111827" stroke-width="5" />
+
+    <circle cx="155" cy="130" r="12" fill="none" stroke="#111827" stroke-width="4.5" />
+    
+    <line x1="155" y1="140" x2="8" y2="242" stroke="#111827" stroke-width="3" />
+    <line x1="155" y1="140" x2="350" y2="82" stroke="#111827" stroke-width="3.5" />
+    <line x1="155" y1="140" x2="494" y2="60" stroke="#111827" stroke-width="3" />
+    <line x1="155" y1="140" x2="494" y2="156" stroke="#111827" stroke-width="3" />
+  </g>
+
+  <!-- 3. STACKED CONTAINERS -->
+  <g id="background-containers">
+    <path d="M 366,440 L 522,342 L 522,480 L 366,590 Z" fill="#deb32d" />
+    <path d="M 522,342 L 565,365 L 565,490 L 522,480 Z" fill="#bd951f" />
+    
+    <path d="M 376,434 L 376,583" stroke="#997816" stroke-width="3" />
+    <path d="M 386,428 L 386,576" stroke="#997816" stroke-width="3" />
+    <path d="M 396,422 L 396,569" stroke="#997816" stroke-width="3" />
+    <path d="M 406,416 L 406,562" stroke="#997816" stroke-width="3" />
+    <path d="M 416,410 L 416,555" stroke="#997816" stroke-width="3" />
+    <path d="M 426,404 L 426,548" stroke="#997816" stroke-width="3" />
+    <path d="M 436,398 L 436,541" stroke="#997816" stroke-width="3" />
+    <path d="M 446,392 L 446,534" stroke="#997816" stroke-width="3" />
+    <path d="M 456,386 L 456,527" stroke="#997816" stroke-width="3" />
+    <path d="M 466,380 L 466,520" stroke="#997816" stroke-width="3" />
+    <path d="M 476,374 L 476,513" stroke="#997816" stroke-width="3" />
+    <path d="M 486,368 L 486,506" stroke="#997816" stroke-width="3" />
+    <path d="M 496,362 L 496,499" stroke="#997816" stroke-width="3" />
+    <path d="M 506,356 L 506,492" stroke="#997816" stroke-width="3" />
+    <path d="M 516,350 L 516,485" stroke="#997816" stroke-width="3" />
+
+    <line x1="540" y1="360" x2="540" y2="484" stroke="#785d0e" stroke-width="2" />
+    <line x1="550" y1="363" x2="550" y2="487" stroke="#785d0e" stroke-width="2" />
+
+    <path d="M 522,480 L 565,490 L 565,600 L 522,600 Z" fill="#9e281d" />
+    <path d="M 565,420 L 600,432 L 600,600 L 565,600 Z" fill="#801b12" />
+    <line x1="580" y1="431" x2="580" y2="600" stroke="#54110b" stroke-width="2.5" />
+  </g>
+
+  <!-- 4. SUSPENDED CRITICAL TARGET CONTAINER -->
+  <g id="suspended-cargo-container">
+    <path
+      id="container-underbelly"
+      d="M 8,442 L 350,242 L 494,363 L 8,442 Z"
+      fill="#0c111d"
+    />
+    
+    <g id="underbelly-corrugation" stroke="#1d2939" stroke-width="5" stroke-linecap="round">
+      <line x1="28" y1="431" x2="48" y2="433" />
+      <line x1="58" y1="413" x2="88" y2="416" />
+      <line x1="98" y1="390" x2="138" y2="394" />
+      <line x1="148" y1="361" x2="198" y2="366" />
+      <line x1="208" y1="327" x2="268" y2="333" />
+      <line x1="278" y1="287" x2="348" y2="294" />
+      <line x1="338" y1="262" x2="418" y2="270" />
+      <line x1="398" y1="247" x2="478" y2="257" />
+    </g>
+
+    <path
+      id="container-long-side"
+      d="M 8,242 L 350,56 L 350,242 L 8,442 Z"
+      fill="#d44322"
+      stroke="#111827"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+
+    <g id="long-side-ridges">
+      <path d="M 32,229 L 32,428" stroke="#111827" stroke-width="4" />
+      <path d="M 35,227 L 35,426" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 56,216 L 56,414" stroke="#111827" stroke-width="4" />
+      <path d="M 59,214 L 59,412" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 81,203 L 81,400" stroke="#111827" stroke-width="4" />
+      <path d="M 84,201 L 84,398" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 105,190 L 105,386" stroke="#111827" stroke-width="4" />
+      <path d="M 108,188 L 108,384" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 130,176 L 130,371" stroke="#111827" stroke-width="4" />
+      <path d="M 133,174 L 133,369" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 154,163 L 154,357" stroke="#111827" stroke-width="4" />
+      <path d="M 157,161 L 157,355" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 179,150 L 179,343" stroke="#111827" stroke-width="4" />
+      <path d="M 182,148 L 182,341" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 203,137 L 203,329" stroke="#111827" stroke-width="4" />
+      <path d="M 206,135 L 206,327" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 228,123 L 228,314" stroke="#111827" stroke-width="4" />
+      <path d="M 231,121 L 231,312" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 252,110 L 252,300" stroke="#111827" stroke-width="4" />
+      <path d="M 255,108 L 255,298" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 277,96 L 277,286" stroke="#111827" stroke-width="4" />
+      <path d="M 280,94 L 280,284" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 301,83 L 301,271" stroke="#111827" stroke-width="4" />
+      <path d="M 304,81 L 304,269" stroke="#f05b38" stroke-width="2.5" />
+
+      <path d="M 326,70 L 326,257" stroke="#111827" stroke-width="4" />
+      <path d="M 329,68 L 329,255" stroke="#f05b38" stroke-width="2.5" />
+    </g>
+
+    <path
+      id="container-doors-face"
+      d="M 350,56 L 494,156 L 494,342 L 350,242 Z"
+      fill="#b3361a"
+      stroke="#111827"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+
+    <line
+      id="container-door-split"
+      x1="422"
+      y1="106"
+      x2="422"
+      y2="292"
+      stroke="#111827"
+      stroke-width="4"
+    />
+
+    <g id="door-lock-rods" stroke="#eab308" stroke-width="3.5" stroke-linecap="round">
+      <line x1="384" y1="91" x2="384" y2="257" />
+      <line x1="394" y1="98" x2="394" y2="264" />
+      <line x1="450" y1="137" x2="450" y2="303" />
+      <line x1="460" y1="144" x2="460" y2="310" />
+    </g>
+    
+    <g id="door-locks-hardware" fill="#111827">
+      <rect x="380" y="160" width="10" height="6" />
+      <rect x="390" y="167" width="10" height="6" />
+      <rect x="446" y="206" width="10" height="6" />
+      <rect x="456" y="213" width="10" height="6" />
+    </g>
+
+    <path
+      d="M 8,242 L 350,56 L 494,156 M 350,56 L 350,242"
+      fill="none"
+      stroke="#fff3eb"
+      stroke-width="3.5"
+      opacity="0.25"
+    />
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+<svg
+  id="weparcel-brand-logo-svg"
+  viewBox="0 0 540 230"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- WE Bold Orange Text -->
+  <text
+    id="logo-text-we"
+    x="12"
+    y="86"
+    fill="#ff7a00"
+    font-family="system-ui, -apple-system, 'Montserrat', 'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="106"
+    letter-spacing="-4"
+  >
+    WE
+  </text>
+
+  <!-- Aerodynamic Orange Truck Roof and Windshield Outline -->
+  <path
+    id="logo-truck-upper-path"
+    d="M 172,50 L 434,50 Q 440,50 445,55 L 485,108 Q 490,114 487,122 L 481,142"
+    fill="none"
+    stroke="#ff7a00"
+    stroke-width="15"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Bumper / Cab transition and Hood step -->
+  <path
+    id="logo-truck-hood"
+    d="M 470,108 L 505,115 Q 520,118 522,130 L 522,201 Q 522,207 515,207 L 500,207"
+    fill="none"
+    stroke="#ff7a00"
+    stroke-width="15"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Street / Chassis Line with integrated Wheel Arch Humps -->
+  <path
+    id="logo-truck-street-chassis"
+    d="M 28,207 L 85,207 A 38,38 0 0,1 179,207 L 405,207 A 38,38 0 0,1 499,207"
+    fill="none"
+    stroke="#ff7a00"
+    stroke-width="15"
+    stroke-linecap="round"
+  />
+
+  <!-- Embedded "PARCEL" Bold White filled Text -->
+  <text
+    id="logo-text-parcel"
+    x="24"
+    y="158"
+    fill="#ffffff"
+    font-family="system-ui, -apple-system, 'Montserrat', 'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="88"
+    letter-spacing="-1"
+  >
+    PARCEL
+  </text>
+
+  <!-- Left Wheel -->
+  <circle
+    id="logo-wheel-left-outer"
+    cx="132"
+    cy="207"
+    r="34"
+    fill="#ff7a00"
+  />
+  <circle
+    id="logo-wheel-left-inner"
+    cx="132"
+    cy="207"
+    r="14"
+    fill="#ffffff"
+  />
+
+  <!-- Right Wheel -->
+  <circle
+    id="logo-wheel-right-outer"
+    cx="452"
+    cy="207"
+    r="34"
+    fill="#ff7a00"
+  />
+  <circle
+    id="logo-wheel-right-inner"
+    cx="452"
+    cy="207"
+    r="14"
+    fill="#ffffff"
+  />
+</svg>
