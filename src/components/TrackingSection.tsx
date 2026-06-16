@@ -79,11 +79,6 @@ export default function TrackingSection({ initialTrackingCode = '', onTrackSubmi
     setCopiedId(code);
     setTrackingNumber(code);
     setTimeout(() => setCopiedId(null), 2000);
-
-    // If on home hero page with a global tracking modal routing option, trigger popup instantly on clicking demo code
-    if (onTrackSubmit) {
-      onTrackSubmit(code);
-    }
   };
 
   return (
