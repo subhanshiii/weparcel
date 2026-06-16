@@ -74,10 +74,17 @@ export default function TrackingSection({ initialTrackingCode = '', onTrackSubmi
     }
   };
 
-  const copyToClipboard = (code: string) => {
+  const loadDemoCode = (code: string) => {
+    // Populate the field only
+    setTrackingNumber(code);
+    // Explicitly clear any existing results or errors to ensure it doesn't "direct" anywhere
+    setShipment(null);
+    setSearchedId('');
+    setError('');
+    
+    // Feedback for the copy action
     navigator.clipboard.writeText(code);
     setCopiedId(code);
-    setTrackingNumber(code);
     setTimeout(() => setCopiedId(null), 2000);
   };
 
@@ -312,21 +319,6 @@ export default function TrackingSection({ initialTrackingCode = '', onTrackSubmi
                           <p className="text-[11px] text-zinc-400 font-mono">{milestone.location}</p>
                           <p className="text-zinc-500 leading-relaxed mt-1 text-[11px]">{milestone.description}</p>
                         </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-            </div>
-
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
-      </div>
                       </div>
                     );
                   })}
