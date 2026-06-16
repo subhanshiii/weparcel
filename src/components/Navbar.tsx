@@ -25,7 +25,6 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
     { label: 'Home', id: 'home' },
     { label: 'Shipments', id: 'shipments' },
     { label: 'Services', id: 'services' },
-    { label: 'Calculator', id: 'services', hash: '#calculator' },
     { label: 'Support', id: 'support' },
   ];
 
@@ -72,7 +71,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
               const isActive = activePage === item.id;
               return (
                 <button
-                  key={item.id}
+                  key={item.label}
                   onClick={() => handleNavClick(item.id)}
                   className={`relative px-4 py-2 font-display text-sm font-medium tracking-wide transition-colors duration-200 outline-none ${
                     isActive ? 'text-brand-orange' : 'text-zinc-300 hover:text-white'
@@ -100,6 +99,13 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
                }`}
             >
               Client Access
+            </button>
+            <button
+               onClick={() => handleNavClick('services', '#calculator')}
+               className="px-5 py-2 font-dmmono text-xs font-semibold uppercase tracking-wider bg-zinc-900 hover:bg-zinc-800 text-white border border-white/10 rounded-none transition-colors duration-300 transform active:scale-95 flex items-center space-x-1.5"
+            >
+              <Box size={14} className="text-brand-orange" />
+              <span>Calculate</span>
             </button>
             <button
                onClick={onOpenQuickTrack}
@@ -139,7 +145,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
                 const isActive = activePage === item.id;
                 return (
                   <button
-                    key={item.id}
+                    key={item.label}
                     onClick={() => handleNavClick(item.id)}
                     className={`block w-full text-left px-4 py-3 rounded-none font-display text-base font-semibold ${
                       isActive 
@@ -164,13 +170,22 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
                 Client Access Portal
               </button>
 
-              <div className="pt-4 px-4">
+              <div className="pt-4 grid grid-cols-2 gap-3 px-4">
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    handleNavClick('services', '#calculator');
+                  }}
+                  className="py-3 text-center font-dmmono text-xs font-bold uppercase tracking-wider bg-zinc-900 text-white rounded-none shadow-md transition-colors"
+                >
+                  Calculate
+                </button>
                 <button
                   onClick={() => {
                     setIsOpen(false);
                     onOpenQuickTrack();
                   }}
-                  className="w-full py-3 text-center font-dmmono text-sm font-bold uppercase tracking-wider bg-brand-orange hover:bg-brand-orange-hover text-black rounded-none shadow-md transition-colors"
+                  className="py-3 text-center font-dmmono text-xs font-bold uppercase tracking-wider bg-brand-orange hover:bg-brand-orange-hover text-black rounded-none shadow-md transition-colors"
                 >
                   Track Now
                 </button>
