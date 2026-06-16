@@ -176,7 +176,7 @@ export default function Services() {
         </div>
 
         {/* 4. FREIGHT RATE CALCULATOR SECTION */}
-        <section className="bg-zinc-950 rounded-none border border-white/5 p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        <section id="calculator" className="bg-zinc-950 rounded-none border border-white/5 p-6 sm:p-10 shadow-2xl relative overflow-hidden">
           
           <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />

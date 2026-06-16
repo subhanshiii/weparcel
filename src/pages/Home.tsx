@@ -369,8 +369,15 @@ export default function Home({ setActivePage, openQuickTrackWithId, onOpenAuth }
               </button>
               
               <button
-                onClick={() => setActivePage('support')}
+                onClick={() => setActivePage('services')}
                 className="w-full sm:w-auto px-8 py-4 bg-white/90 hover:bg-white text-zinc-900 font-dmmono font-semibold uppercase tracking-wider text-xs rounded-none transition-all duration-300 transform active:scale-95 shadow-md"
+              >
+                Calculate Transport Rate
+              </button>
+
+              <button
+                onClick={() => setActivePage('support')}
+                className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/20 hover:border-white text-white font-dmmono font-semibold uppercase tracking-wider text-xs rounded-none transition-all duration-300 transform active:scale-95 shadow-md"
               >
                 Contact Sales
               </button>

@@ -25,13 +25,24 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
     { label: 'Home', id: 'home' },
     { label: 'Shipments', id: 'shipments' },
     { label: 'Services', id: 'services' },
+    { label: 'Calculator', id: 'services', hash: '#calculator' },
     { label: 'Support', id: 'support' },
   ];
 
-  const handleNavClick = (pageId: string) => {
+  const handleNavClick = (pageId: string, hash?: string) => {
     setActivePage(pageId);
     setIsOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
