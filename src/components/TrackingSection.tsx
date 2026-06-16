@@ -133,7 +133,7 @@ export default function TrackingSection({ initialTrackingCode = '', onTrackSubmi
                 <button
                   key={s.id}
                   type="button"
-                  onClick={() => copyToClipboard(s.id)}
+                  onClick={() => loadDemoCode(s.id)}
                   className="flex items-center space-x-1 px-3 py-1 bg-zinc-900/80 hover:bg-zinc-800 hover:text-white border border-white/10 rounded-none transition-all duration-200"
                 >
                   <span className="font-mono text-zinc-300 text-[11px]">{s.id}</span>
@@ -312,6 +312,21 @@ export default function TrackingSection({ initialTrackingCode = '', onTrackSubmi
                           <p className="text-[11px] text-zinc-400 font-mono">{milestone.location}</p>
                           <p className="text-zinc-500 leading-relaxed mt-1 text-[11px]">{milestone.description}</p>
                         </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+            </div>
+
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+      </div>
                       </div>
                     );
                   })}
