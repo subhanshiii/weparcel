@@ -95,7 +95,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, on
           {/* Desktop CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <button
-               onClick={() => handleNavClick('login')}
+               onClick={() => onOpenAuth('login')}
                className={`px-4 py-2 font-display text-sm font-semibold tracking-wide transition-colors duration-200 outline-none ${
                  activePage === 'login' || activePage === 'register' ? 'text-brand-orange' : 'text-zinc-300 hover:text-white'
                }`}
@@ -103,7 +103,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, on
               Client Access
             </button>
             <button
-               onClick={() => handleNavClick('services', '#calculator')}
+               onClick={onOpenCalculator}
                className="px-5 py-2 font-dmmono text-xs font-semibold uppercase tracking-wider bg-zinc-900 hover:bg-zinc-800 text-white border border-white/10 rounded-none transition-colors duration-300 transform active:scale-95 flex items-center space-x-1.5"
             >
               <Box size={14} className="text-brand-orange" />
@@ -194,6 +194,12 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, on
               </div>
             </div>
           </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+}
+    </motion.div>
         )}
       </AnimatePresence>
     </header>

@@ -92,7 +92,8 @@ export default function CalculatorModal({ isOpen, onClose }: CalculatorModalProp
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-6 right-6 p-2 text-zinc-500 hover:text-white transition-colors z-10"
+              className="absolute top-6 right-6 p-2 bg-zinc-900/80 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-white/10 rounded-full transition-all duration-200 z-10 shadow-lg"
+              aria-label="Close modal"
             >
               <X size={20} />
             </button>

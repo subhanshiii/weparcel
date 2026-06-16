@@ -370,7 +370,7 @@ export default function Home({ setActivePage, openQuickTrackWithId, onOpenAuth, 
               </button>
               
               <button
-                onClick={() => setActivePage('services')}
+                onClick={onOpenCalculator}
                 className="w-full sm:w-auto px-8 py-4 bg-white/90 hover:bg-white text-zinc-900 font-dmmono font-semibold uppercase tracking-wider text-xs rounded-none transition-all duration-300 transform active:scale-95 shadow-md"
               >
                 Calculate Transport Rate
