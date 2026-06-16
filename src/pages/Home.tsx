@@ -10,9 +10,10 @@ interface HomeProps {
   setActivePage: (page: string) => void;
   openQuickTrackWithId: (id: string) => void;
   onOpenAuth: (view?: 'login' | 'register') => void;
+  onOpenCalculator: () => void;
 }
 
-export default function Home({ setActivePage, openQuickTrackWithId, onOpenAuth }: HomeProps) {
+export default function Home({ setActivePage, openQuickTrackWithId, onOpenAuth, onOpenCalculator }: HomeProps) {
   const [stats] = useState([
     { val: '50K+', label: 'Deliveries' },
     { val: '99.8%', label: 'On-Time' },

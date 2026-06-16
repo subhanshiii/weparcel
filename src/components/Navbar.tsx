@@ -7,9 +7,11 @@ interface NavbarProps {
   activePage: string;
   setActivePage: (page: string) => void;
   onOpenQuickTrack: () => void;
+  onOpenAuth: (view?: 'login' | 'register') => void;
+  onOpenCalculator: () => void;
 }
 
-export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: NavbarProps) {
+export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, onOpenAuth, onOpenCalculator }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -174,7 +176,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack }: 
                 <button
                   onClick={() => {
                     setIsOpen(false);
-                    handleNavClick('services', '#calculator');
+                    onOpenCalculator();
                   }}
                   className="py-3 text-center font-dmmono text-xs font-bold uppercase tracking-wider bg-zinc-900 text-white rounded-none shadow-md transition-colors"
                 >

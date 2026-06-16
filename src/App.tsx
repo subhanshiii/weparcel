@@ -12,6 +12,7 @@ import Register from './pages/Register';
 import AssetsRegistry from './pages/AssetsRegistry';
 import TrackingSection from './components/TrackingSection';
 import AuthModal from './components/AuthModal';
+import CalculatorModal from './components/CalculatorModal';
 
 export default function App() {
   const [activePage, setActivePage] = useState<string>('home');
@@ -19,6 +20,7 @@ export default function App() {
   const [quickTrackPreloadId, setQuickTrackPreloadId] = useState('');
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalView, setAuthModalView] = useState<'login' | 'register'>('login');
+  const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
 
   const openAuthModal = (view: 'login' | 'register' = 'login') => {
     setAuthModalView(view);
@@ -37,6 +39,7 @@ export default function App() {
               setIsQuickTrackOpen(true);
             }}
             onOpenAuth={openAuthModal}
+            onOpenCalculator={() => setIsCalculatorOpen(true)}
           />
         );
       case 'shipments':
@@ -60,6 +63,7 @@ export default function App() {
               setIsQuickTrackOpen(true);
             }}
             onOpenAuth={openAuthModal}
+            onOpenCalculator={() => setIsCalculatorOpen(true)}
           />
         );
     }
@@ -77,6 +81,7 @@ export default function App() {
           setIsQuickTrackOpen(true);
         }}
         onOpenAuth={openAuthModal}
+        onOpenCalculator={() => setIsCalculatorOpen(true)}
       />
 
       {/* Main page content area wrapped under fade layout animations */}
@@ -102,6 +107,12 @@ export default function App() {
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         initialView={authModalView}
+      />
+
+      {/* Global Rate Calculator Modal */}
+      <CalculatorModal
+        isOpen={isCalculatorOpen}
+        onClose={() => setIsCalculatorOpen(false)}
       />
 
       {/* Global Quick Track Modal popup */}
