@@ -79,6 +79,18 @@ export default function Services() {
           <p className="font-dmsans text-zinc-400 text-sm leading-relaxed">
             Discover precision transport. Whether you are dispatching express medical containers or managing international retail cashflows, we provide secure custom logistics.
           </p>
+          <div className="pt-4 flex justify-center">
+            <button
+              onClick={() => {
+                const el = document.getElementById('calculator');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="px-6 py-2.5 bg-brand-orange/10 hover:bg-brand-orange text-brand-orange hover:text-black border border-brand-orange/20 font-dmmono text-xs font-bold uppercase tracking-widest rounded-none transition-all duration-300 flex items-center space-x-2"
+            >
+              <Calculator size={14} />
+              <span>Jump to Rate Calculator</span>
+            </button>
+          </div>
         </div>
 
         {/* List of Elite Services of WEPARCEL with Bullet points and high contrast grids */}
