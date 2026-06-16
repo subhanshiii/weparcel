@@ -162,7 +162,10 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, on
               
               {/* Dynamic Client Portal Mobile trigger */}
               <button
-                onClick={() => handleNavClick('login')}
+                onClick={() => {
+                  setIsOpen(false);
+                  onOpenAuth('login');
+                }}
                 className={`block w-full text-left px-4 py-3 rounded-none font-display text-base font-semibold ${
                   activePage === 'login' || activePage === 'register'
                     ? 'bg-zinc-900 text-brand-orange border-l-2 border-brand-orange' 
@@ -194,12 +197,6 @@ export default function Navbar({ activePage, setActivePage, onOpenQuickTrack, on
               </div>
             </div>
           </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
-  );
-}
-    </motion.div>
         )}
       </AnimatePresence>
     </header>
